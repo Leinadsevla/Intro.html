@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Pagina</title>
+</head>
+<body>
+   <!-- <strong> Deixa tudo em negrito <em> deixa tudo em italico -->
+   <!--  -->
+    <nav>
+        <a href="#galeria" target="_blank">Galeria</a>
+        <a href="#formulario" target="_self">Formulario</a>
+        <a href="#vide" target="_blank">Video</a>
+        <a href="#musica" target="_blank">Musica</a>
+    </nav>
+    
+
+    <h2>Bem vindo</h2>
+    <h1> Minha Primeira pagina</h1>
+    <p>Meu nome e Daniel  </p>
+    <p>Gosto muito de Ler hqs</p>
+    <ul>
+        <li>Transformers infiltrados</li>
+        <li>Acompanho automobilismo</il>
+        <li>Coleciono Miniaturas</li>
+
+    </ul>
+    <p>Você pode encontrar Algumas hqs nesse site</p>
+    <a href="https://site.soquadrinhos.com/" target="_blank">Ir para o site</a>
+   
+    <h2 id="formulario">Formulario</h2>
+    <form action="processar.php" method="post">
+       <p>Faça a sua inscrição para receber atualizações sobre hqs</p>
+       <p>Qual seu nome</p>
+       <input type="text" name="nome" placeholder="Digite seu nome"><br>
+       <p><strong>Informe seu e-mail</strong></p>
+       <input type="email" name="email" placeholder="Digite seu email"><br>
+       <p><strong>Digite o seu numero de telefone</strong></p>
+       <input type="tel" name="telefone" placeholder="(00)0000-0000"><br>
+       <p>Qual seu sexo</p> 
+       <input type="radio" name="genero" value="masculino"> Masculino
+       <input type="radio" name="genero" value="feminino"> Feminino
+       
+       <!-- Aqui eu crio um select -->
+       <p><label for="editora">Qual editora você gosta?</label></p>
+       <select name="editora">
+        <option value="Dc comics">Dc comics</option>
+        <option value="Marvel">Marvel</option>
+        <option value="Image">Image</option>
+        <option value="IDW">IDW</option>
+       </select>
+       <input type="submit" value="Enviar">
+      
+    </form>
+    <!-- aqui temos listas nao ordenadas e ordenadas  -->
+    <p>Essa e uma lista com alguns titulos de filmes </p>
+    <ol>
+        <li>Circulo de Fogo</li>
+        <li>Speed Race</li>
+        <li>trilogia Senhor dos aneis</li>
+
+    </ol>
+    <!-- video -->
+    <h2 id="video">Video</h2>
+    <p><strong>Clipe Musical Hotwheels Via 35</strong></p>
+    <video width="600" controls autoplay loop muted>
+        <source src="Hot Wheels~ Alive and Amplified FULL HD.mp4" type="video/mp4">   
+   </video>
+<!-- Musica   -->
+   <h2 id="musica">Musica</h2>
+      <p><strong>Musica Linkin Park A Place For My Head</strong></p>
+      <audio controls autoplay loop>
+      <source src="A Place For My Head - Linkin Park (Hybrid Theory).mp" type="audio/mpeg">
+        
+      </audio>
+      
+    <ul> 
+        <p> <strong>Passos para se fazer uma Lasanha</strong></p>
+        <li>Compre molho de tomate</li>
+        <li>Compre os engredientes para se fazer uma lasanha</li>
+        <li>Coloque os engredientes na massa</li>
+        <li>Coleque eles no forno e espere ate ficar pronto</li>
+        <li>Estando pronto é so se servir </li>
+    </ul>
+    <!-- Aqui estou criando uma galeria com alguns textos descrevendo -->
+    <h2 id="galeria">Galeria de imagens</h2>
+    <img src="Fuji2.jpg" alt="Monte Fuji" width="500">
+    <figcaption><strong>Monte Fuji japão</strong></figcaption>
+    <figure>
+        <img src="Suzuka.jpg" alt="Circuito de Suzuka aos pés do Monte Fuji" width="300">
+        <figcaption>Circuito de Suzuka  </figcaption>
+        <img src="Transformers.jpg" alt="Capa Transformers G1" width="550" height="400">
+        <figcaption>Transformers G1</figcaption>
+        <img src="Subaru.jpg" alt="Subaru subindo uma ladeira" width="500" height="400">
+        <figcaption>Subaru impreza</figcaption>
+    </figure>
+    <!--  Aqui vemos algumas tabelas -->
+    <table bolder="28" cellspacing="20"> 
+        <tr>
+            <th>Nome da equipe</th>
+            <th colspan="1">Vitorias</th>
+            <th colspan="2">Derrotas</th>
+        </tr>
+        <tr>
+            <th>Gato sego</th>
+            <th>2</th>
+            <th>8</th>
+
+        </tr>
+
+      <tr>
+        <th>Galo sego</th>
+        <th>5</th>
+        <th>6</th>
+      </tr>
+      <tr>
+        <th>Muleta de Cobra</th>
+        <th>9</th>
+        <th>7</th>
+      </tr>
+      <tr>
+        <th>Oculos de Tatu</th>
+        <th>4</th>
+        <th>8</th>
+      </tr>
+    </table>
+    <table bolder="90" cellspacing="10">
+        <tr>
+            <th >Nome da mercadoria</th>
+            <th>Preço</th>
+            <th colspan="2">Quantidade em estoque</th>
+        </tr>
+        <tr>
+            <th>tomate</th>
+            <th>1,50</th>
+            <th>50</th>  
+
+        </tr>
+        <tr>
+            <th>Caqui</th>
+            <th>8,50</th>
+            <th>80</th>  
+
+        </tr>
+        <tr>
+            <th>Laranja</th>
+            <th>4,50</th>
+            <th>70</th>  
+
+        </tr>
+        
+    </table>
+    <br>
+    <table bolder="20" cellspacing="10">
+        <tr>
+            <th colspan="1">Dia da semana</th>
+            <th colspan="1">Materia</th>
+            <th colspan="2">Horario</th>  
+
+        </tr>
+        <tr>
+            <th>Segunda</th>
+            <th>Matematica</th>
+            <th>13:50</th>  
+
+        </tr>
+        <tr>
+            <th>Terça</th>
+            <th>Física</th>
+            <th>12:00</th>  
+
+        </tr>
+        <tr>
+            <th>Quarta</th>
+            <th>Portugues</th>
+            <th>11:50</th>  
+
+        </tr>
+        <tr>
+            <th>Quinta</th>
+            <th>Ciencias</th>
+            <th>10:00</th>  
+
+        </tr>
+        <tr>
+            <th>Sexta</th>
+            <th>Historia</th>
+            <th>10:00</th>  
+
+        </tr>
+
+
+    </table>
+
+
+</body>
+</html>
